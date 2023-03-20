@@ -1,0 +1,32 @@
+package com.faber;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DemoConsolaApplication implements CommandLineRunner{
+	
+	private static Logger LOG = LoggerFactory.getLogger(DemoConsolaApplication.class);
+
+	public static void main(String[] args) {
+		SpringApplication.run(DemoConsolaApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		// TODO Auto-generated method stub
+		// Sysout + ctl+espacio
+		System.out.println("Hola Devs, desde consola");
+		System.out.println("Ahora vienen los Loggers");
+		//Alternativa Sysout
+		LOG.warn("Hola DEVs, Advertencia Warn");
+		LOG.info("Hola DEVs, Info Info");
+		LOG.warn("Hola DEVs, Advertencia Warn");
+		LOG.error("Hola DEVs, Error ");
+		
+	}
+
+}
