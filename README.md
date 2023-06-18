@@ -29,3 +29,13 @@ Demos para entender Java Springboot
  * [😉 Carpeta Código ](./DemoInyeccionDependencias/src/main/java/com/faber/)
  * [😉 Implementacion](./DemoInyeccionDependencias/src/main/java/com/faber/repository/PersonaRepoImpl2.java)
  * [😉 Inyeccion dependencia (Implementacion)](./DemoInyeccionDependencias/src/main/java/com/faber/service/PersonaServiceImpl.java) 
+
+## MVC Thymeleaf
+
+Generar Plantillas HTML dinamicas
+* [▶️ Video referencia](https://www.youtube.com/watch?v=elz3vXttR-Q&list=PLvimn1Ins-40wR4PC-YtTQ5TKt3vRrVwl&index=6)
+
+
+ * [😉 Carpeta Código ](./DemoWebThymeleafMVC/src/main)
+ * [😉 Controller](./DemoWebThymeleafMVC/src/main/java/com/faber/controller/DemoController.java)
+ * [😉 Vista HTML Dinamica](./DemoWebThymeleafMVC/src/main/resources/templates/greeting.html)
