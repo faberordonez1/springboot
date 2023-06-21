@@ -39,3 +39,14 @@ Generar Plantillas HTML dinamicas
  * [😉 Carpeta Código ](./DemoWebThymeleafMVC/src/main)
  * [😉 Controller](./DemoWebThymeleafMVC/src/main/java/com/faber/controller/DemoController.java)
  * [😉 Vista HTML Dinamica](./DemoWebThymeleafMVC/src/main/resources/templates/greeting.html)
+
+ ## Spring Data JPA MVC
+ * [▶️ Video referencia](https://www.youtube.com/watch?v=elz3vXttR-Q&list=PLvimn1Ins-40wR4PC-YtTQ5TKt3vRrVwl&index=7)
+
+ * [😉 Carpeta Código ](./JPA-SpringData/)
+ * [😉 Model o Entidad](./JPA-SpringData/src/main/java/com/faber/model/Persona.java) Equivalente a tabla en BD
+* [😉 Repository JPA](./JPA-SpringData/src/main/java/com/faber/repo/IPersonaRepo.java) Para el manejo de las propiedades o ventajas de JPA para la entidad
+* [😉 Aplication Propierties](./JPA-SpringData/src/main/resources/application.properties) Datos conexion a BD
+* [😉 Controller](./JPA-SpringData/src/main/java/com/faber/controller/DemoController.java)  Aquí se inyecta la interface del repository y se usa sus métodos para guardar o manipular la BD
+
+Nota: @Query sirve para traer solo ciertas columnas de la BD

@@ -20,11 +20,23 @@ public class DemoController {
 	public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
 	        model.addAttribute("name",name);//Modelo de spring para agg variables a la vista
 	        
+					//Se crea la persona y sus datos, lo ideal es hacerlo en el service
 	        Persona p = new Persona();
-	        p.setIdPersona(1);
-	        p.setNombre("Faber");	
-	        repo.save(p);
+	        p.setIdPersona(2);
+	        p.setNombre("Javier");	
+	        repo.save(p);//Guarda en BD, usando la interface repo que tiene extiende de JPA
 	        
+	        return "greeting"; //página a navegar
+	  }
+	
+	/* En este ejemplo se obtienen toda las personas de BD usando el método findAll y se le pasan a 
+	la vista para que los muestre */
+	
+	@GetMapping("/listar")
+	public String listar( Model model) {
+		    model.addAttribute("name","Listar");
+	        model.addAttribute("personas",repo.findAll());//Pasa todas las personas a la vista
+	             
 	        return "greeting"; //página a navegar
 	  }
 
