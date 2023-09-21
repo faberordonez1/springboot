@@ -30,7 +30,7 @@ Demos para entender Java Springboot
  * [😉 Implementacion](./DemoInyeccionDependencias/src/main/java/com/faber/repository/PersonaRepoImpl2.java)
  * [😉 Inyeccion dependencia (Implementacion)](./DemoInyeccionDependencias/src/main/java/com/faber/service/PersonaServiceImpl.java) 
 
-## MVC Thymeleaf
+## MVC Thymeleaf 6️⃣
 
 Generar Plantillas HTML dinamicas
 * [▶️ Video referencia](https://www.youtube.com/watch?v=elz3vXttR-Q&list=PLvimn1Ins-40wR4PC-YtTQ5TKt3vRrVwl&index=6)
@@ -40,13 +40,27 @@ Generar Plantillas HTML dinamicas
  * [😉 Controller](./DemoWebThymeleafMVC/src/main/java/com/faber/controller/DemoController.java)
  * [😉 Vista HTML Dinamica](./DemoWebThymeleafMVC/src/main/resources/templates/greeting.html)
 
- ## Spring Data JPA MVC
- * [▶️ Video referencia](https://www.youtube.com/watch?v=elz3vXttR-Q&list=PLvimn1Ins-40wR4PC-YtTQ5TKt3vRrVwl&index=7)
+ ## Spring Data JPA MVC 7️⃣
 
- * [😉 Carpeta Código ](./JPA-SpringData/)
- * [😉 Model o Entidad](./JPA-SpringData/src/main/java/com/faber/model/Persona.java) Equivalente a tabla en BD
+ Permite manejar tablas de BD directamente desde java, reprenstandolo con una entidad
+ * [▶️ Video referencia](https://www.youtube.com/watch?v=elz3vXttR-Q&list=PLvimn1Ins-40wR4PC-YtTQ5TKt3vRrVwl&index=7)
+* [😉 Carpeta Código ](./JPA-SpringData/)
+* [😉 Model o Entidad](./JPA-SpringData/src/main/java/com/faber/model/Persona.java) Equivalente a tabla en BD
 * [😉 Repository JPA](./JPA-SpringData/src/main/java/com/faber/repo/IPersonaRepo.java) Para el manejo de las propiedades o ventajas de JPA para la entidad
 * [😉 Aplication Propierties](./JPA-SpringData/src/main/resources/application.properties) Datos conexion a BD
 * [😉 Controller](./JPA-SpringData/src/main/java/com/faber/controller/DemoController.java)  Aquí se inyecta la interface del repository y se usa sus métodos para guardar o manipular la BD
 
 Nota: @Query sirve para traer solo ciertas columnas de la BD
+
+ ## Servicios Rest 8️⃣
+
+ Servicio rest, tomando como base, datos del punto anterior
+
+  * [▶️ Video Referencia](https://www.youtube.com/watch?v=RABN1tDBN4Q&list=PLvimn1Ins-40wR4PC-YtTQ5TKt3vRrVwl&index=8)
+  * [😉 Carpeta Código ](./JPA-SpringData/)
+  * [😉 Aplication Propierties](./JPA-SpringData/src/main/resources/application.properties) Datos conexion a BD
+  * [😉 Controller](./JPA-SpringData/src/main/java/com/faber/rest/RestDemoController.java) Servicio Rest Post, Get,Put y Delete
+
+
+
+
