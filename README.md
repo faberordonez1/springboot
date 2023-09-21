@@ -60,6 +60,7 @@ Nota: @Query sirve para traer solo ciertas columnas de la BD
   * [😉 Carpeta Código ](./JPA-SpringData/)
   * [😉 Aplication Propierties](./JPA-SpringData/src/main/resources/application.properties) Datos conexion a BD
   * [😉 Controller](./JPA-SpringData/src/main/java/com/faber/rest/RestDemoController.java) Servicio Rest Post, Get,Put y Delete
+  * [😉 Coleccion Prueba](./colecciones/Persona.postman_collection.json) Coleccion de prueba del servicio rest
 
 
 
