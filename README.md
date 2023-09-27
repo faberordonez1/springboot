@@ -62,6 +62,26 @@ Nota: @Query sirve para traer solo ciertas columnas de la BD
   * [😉 Controller](./JPA-SpringData/src/main/java/com/faber/rest/RestDemoController.java) Servicio Rest Post, Get,Put y Delete
   * [😉 Coleccion Prueba](./colecciones/Persona.postman_collection.json) Coleccion de prueba del servicio rest
 
+   ## Spring Security 9️⃣
+
+   Dependecia que restringe el acceso a la aplicacion por usuario y contraseña, se debe agregar en el pom.xml del proyecto
+
+~~~
+	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+	</dependency>
+~~~
+
+Credenciales por defecto
+- usuario: user
+- contraseña :suministrada en consola de la aplicación
+
+Para asignar un usuario y constraseña personalizado, se puede realizar agregando las sigtes lineas en archivo aplication.properties
+- spring.security.user.name=faber
+- spring.security.user.password=1234
+
+
 
 
 
