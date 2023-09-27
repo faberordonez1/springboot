@@ -64,23 +64,26 @@ Nota: @Query sirve para traer solo ciertas columnas de la BD
 
    ## Spring Security 9️⃣
 
-   Dependecia que restringe el acceso a la aplicacion por usuario y contraseña, se debe agregar en el pom.xml del proyecto
+   Dependencia que restringe el acceso a la aplicacion por usuario y contraseña, se debe agregar en el archivo `pom.xml` del proyecto
 
-~~~
+~~~ xml
 	<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 	</dependency>
 ~~~
 
+
 Credenciales por defecto
 - usuario: user
 - contraseña :suministrada en consola de la aplicación
 
-Para asignar un usuario y constraseña personalizado, se puede realizar agregando las sigtes lineas en archivo aplication.properties
-- spring.security.user.name=faber
-- spring.security.user.password=1234
+Para asignar un usuario y constraseña personalizado, se puede realizar agregando las sigtes lineas en archivo `aplication.properties`
 
+``` properties
+spring.security.user.name=faber
+spring.security.user.password=1234
+``` 
 
 
 
