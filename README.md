@@ -101,5 +101,10 @@ Se crea prueba unitaria para simular la creación de un usuario en BD
 
 * [▶️ Video Referencia](https://www.youtube.com/watch?v=zQjZFHo8eO4&list=PLvimn1Ins-40wR4PC-YtTQ5TKt3vRrVwl&index=10)
 
+### 🔴🔴🔴🔴🔴  
+### Seccion sin desarrollar por error en la importacion de WebSecurityConfigurerAdapter 
+### 🔴🔴🔴🔴🔴
+
+
 
 
