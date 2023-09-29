@@ -66,6 +66,9 @@ Nota: @Query sirve para traer solo ciertas columnas de la BD
 
    Dependencia que restringe el acceso a la aplicacion por usuario y contraseña, se debe agregar en el archivo `pom.xml` del proyecto
 
+  * [▶️ Video Referencia](https://www.youtube.com/watch?v=ksLYIavT2L0&list=PLvimn1Ins-40wR4PC-YtTQ5TKt3vRrVwl&index=9)
+
+
 ~~~ xml
 	<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -74,17 +77,29 @@ Nota: @Query sirve para traer solo ciertas columnas de la BD
 ~~~
 
 
-Credenciales por defecto
+### 1. Credenciales por defecto
 - usuario: user
 - contraseña :suministrada en consola de la aplicación
 
-Para asignar un usuario y constraseña personalizado, se puede realizar agregando las sigtes lineas en archivo `aplication.properties`
+### 2. Para asignar un usuario y contraseña personalizado, 
+Se puede realizar agregando las sigtes lineas en archivo `aplication.properties`
 
 ``` properties
 spring.security.user.name=faber
 spring.security.user.password=1234
 ``` 
 
+### 3. Usuario y contraseña dinámico BD
+Para que la proteccion con usuario sea dinámico de acuerdo a un registro de BD, se crean las sigtes clases.
+
+- [Usuario](./JPA-SpringData/src/main/java/com/faber/model/Usuario.java) clase para crear en BD, los usuarios que pueden acceder a la aplicación
+- [SecurityConfig](./JPA-SpringData/src/main/java/com/faber/SecurityConfig.java) Clase o utilidad para encriptar un texto
+- [Prueba Unitaria](./JPA-SpringData/src/test/java/com/faber/JpaSpringDataApplicationTests.java)
+Se crea prueba unitaria para simular la creación de un usuario en BD
+
+## Spring Security II 🔟
+
+* [▶️ Video Referencia](https://www.youtube.com/watch?v=zQjZFHo8eO4&list=PLvimn1Ins-40wR4PC-YtTQ5TKt3vRrVwl&index=10)
 
 
 
