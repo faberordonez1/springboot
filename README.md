@@ -70,10 +70,10 @@ Nota: @Query sirve para traer solo ciertas columnas de la BD
 
 
 ~~~ xml
-	<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-	</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-security</artifactId>
+</dependency>
 ~~~
 
 
